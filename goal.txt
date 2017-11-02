@@ -1,0 +1,22 @@
+fun spam takes (message, count)
+	for i = 0 while i < count then i++
+		print(message) 
+	end
+end
+
+fun begin
+	name = ask("What is your name? ")
+	greeting = "Hello, " + name + "!"
+	num = ask("How many times should I greet you? ")
+	spam(greeting, number(num))
+
+	if lowercase(name) == "david"
+		print("My name is also David!")
+	else
+		print("I wish my name was " + name)
+	end
+
+	print("Bye bye!")
+	pause()
+	hang()
+end
