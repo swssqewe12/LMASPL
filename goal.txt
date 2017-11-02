@@ -4,6 +4,12 @@ fun spam takes (message, count)
 	end
 end
 
+fun farewell
+	if ask("Can I go now? ") == "yes"
+		return true
+	return false
+end
+
 fun begin
 	name = ask("What is your name? ")
 	greeting = "Hello, " + name + "!"
@@ -14,6 +20,10 @@ fun begin
 		print("My name is also David!")
 	else
 		print("I wish my name was " + name)
+	end
+
+	while not farewell
+		print("I don't like talking to you though..")
 	end
 
 	print("Bye bye!")
